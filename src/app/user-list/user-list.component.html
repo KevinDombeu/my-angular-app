@@ -4,6 +4,6 @@
 </div>
 <ul>
     <li *ngFor="let user of users | filter:searchText">
-        {{ user.login }} - {{ user.avatar_url }}
+        {{ user.name }} - {{ user.email }}
     </li>
 </ul>

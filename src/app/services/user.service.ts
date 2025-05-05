@@ -8,8 +8,8 @@ import { Observable, catchError, of, retry } from 'rxjs';
 })
 
 export class UserService {
-  //private apiUrl = 'https://jsonplaceholder.typicode.com/users';
-  private apiUrl = 'https://api.github.com/users';
+  private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+  //private apiUrl = 'https://api.github.com/users';
   constructor(private http: HttpClient) {} 
   getUsers(): Observable<any[]> {
     //return this.http.get<any[]>(this.apiUrl);
